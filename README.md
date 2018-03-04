@@ -21,13 +21,12 @@
 14. To support the feature **Add to homescreen**, create a [manifest.json](src/manifest.json) file and link it in [index.html](src/index.html).
 15. The project is ready and available in the URL given in the console, in my case [here](https://hello-world-c0364.firebaseapp.com/).
 It can be added to Desktop, or HomeScreen on mobile device, as follows. Information like name and icons are taken from the [manifest.json](src/manifest.json) file.
+
 App is opened on web browser on desktop:
 ![prtsc4](prtscs/prtsc4.png)
 How app looks like it is installed on Desktop:
 ![prtsc5](prtscs/prtsc5.png)
-App is opened from a browser on mobile device and there is an option to add it on the homescreen:
-![prtsc6](prtscs/prtsc6.png)
-Added on screen:
-![prtsc7](prtscs/prtsc7.png)
-Opened as installed app on mobile:
-![prtsc8](prtscs/prtsc8.png)
+
+In the next three pictures the application is viewed from mobile device. First picture, app is opened from a browser and there is an option to add it on the homescreen. Second, it is added on screen. Third, it is opened as installed app on mobile.
+
+<img src="prtscs/prtsc6.png" width="280" /> <img src="prtscs/prtsc7.png" width="280" /> <img src="prtscs/prtsc8.png" width="280" />
