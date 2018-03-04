@@ -7,12 +7,11 @@
     <meta name="theme-color" content="#008000"/>
     <title>Dajana's hello world page</title>
     <link rel="stylesheet" type="text/css" href="hello-world.css" media="all">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
 <h1 class="vertical-container">Hello World</h1>
-
 <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
 <script>
     // Initialize Firebase
     var config = {
@@ -25,7 +24,14 @@
     };
     firebase.initializeApp(config);
 </script>
-
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+            .then(function () {
+                console.log('Service Worker Registered');
+            });
+    }
+</script>
 <p>Progressive Web Application made by: Dajana Stojchevska</p>
 </body>
 </html>
